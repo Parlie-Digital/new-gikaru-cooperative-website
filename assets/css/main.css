@@ -29,7 +29,9 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffc451; /* Applied to main navmenu links when they are hovered over or active */
+  /* --nav-hover-color: #ffc451;  */
+  --nav-hover-color: #a9ec728a;
+  /* Applied to main navmenu links when they are hovered over or active */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffc451; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
@@ -825,9 +827,10 @@ section,
   z-index: 3;
 }
 
+/* control the main header */
 .hero h2 {
   margin: 0;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
   font-family: var(--nav-font);
 }
@@ -853,12 +856,24 @@ section,
   align-items: center;
   justify-content: center;
 }
-
+/* 
 .hero .icon-box i {
   font-size: 32px;
   line-height: 1;
   color: var(--accent-color);
+} */
+
+.hero .icon-box .icon-image-box {
+position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 50px; /* Adjust the max-width to fit your design */
+  max-height: 50px; /* Adjust the max-height to fit your design */
+  object-fit: contain;
+
+  color: var(--accent-color);
 }
+
 
 .hero .icon-box h3 {
   font-weight: 700;
