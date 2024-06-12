@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #151515; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ffc451; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #82b362; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --contrast-color: #312f2f; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
 
@@ -52,7 +52,7 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--default-color);
   font-family: var(--default-font);
 }
 
@@ -81,7 +81,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.8);
+  --background-color: rgba(161, 202, 133, 0.8);
   --heading-color: #ffffff;
   --contrast-color: #ffffff;
   color: var(--default-color);
@@ -793,7 +793,8 @@ section,
 --------------------------------------------------------------*/
 .hero {
   --default-color: #ffffff;
-  --background-color: #000000;
+  --background-color: rgba(130, 179, 98, .3);
+  /* --background-color: #82b362; */
   --heading-color: #ffffff;
   width: 100%;
   min-height: 100vh;
