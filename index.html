@@ -88,18 +88,38 @@
     }
     
     .carousel-caption p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     
     /* Adjustments for small screens */
     @media (max-width: 768px) {
       .carousel-item{
 
-        height: 18rem;
+        height: 20rem;
 
       }
+
       .carousel-caption {
-        background-color: rgba(31, 27, 27, 0.8); /* Darker overlay for smaller screens */
+
+  
+     /* Color overlay with alpha for transparency */
+        color: #ffffff; /* White text color */
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+      }
+      .carousel-caption h2 {
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: bold;
+
+
+      }
+      
+      .carousel-caption p {
+        font-size: 1rem;
+        display: none;
       }
     }
 
@@ -367,7 +387,7 @@
             <img src="assets/img/coffee/battlecreek-coffee-roasters.jpg"  class="d-block w-100 c-img" alt="Slide 1">
   
          <div class="container-carousel">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption  d-md-block">
             <h2>Welcome to New Gikaru Farmers Cooperative Society Ltd<span>.</span></h2>
             <p>Enhancing production of quality coffee with effective and efficient Methods.</p>
           </div>
