@@ -30,7 +30,7 @@
 :root {
   --nav-color: rgba(255, 255, 255, 0.905);  /* The default color of the main navmenu links */
   /* --nav-hover-color: #ffc451;  */
-  --nav-hover-color: #a9ec728a;
+  --nav-hover-color: #f68b34;
   /* Applied to main navmenu links when they are hovered over or active */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
