@@ -798,6 +798,120 @@ section,
   text-transform: uppercase;
 }
 
+
+
+
+
+/*--------------------------------------------------------------
+# Carousel Section
+--------------------------------------------------------------*/
+
+
+
+.carousel-item{
+
+  height: 36rem;
+  background: #777;
+  color:white;
+  position:relative;
+}
+
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+
+
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0.6;
+  z-index: 1;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+/* Color overlay with alpha for transparency */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  text-align: center;
+  width: 60%;
+  z-index: 2;
+}
+
+.carousel-caption h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .carousel-item{
+
+    height: 20rem;
+
+  }
+
+  .carousel-caption {
+
+
+ /* Color overlay with alpha for transparency */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  }
+  .carousel-caption h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+    display: none;
+  }
+}
+
+.c-item {
+  height: 36rem;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.custom-vision-text{
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
