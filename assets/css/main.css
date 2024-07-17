@@ -830,7 +830,7 @@ section,
   opacity: 0.6;
   z-index: 1;
 }
- */
+
 
 /* .carousel-caption {
   position: absolute;
@@ -945,26 +945,36 @@ section,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background:rgba(119, 119, 119, .4);
   color: #ffffff;
   padding: 20px;
   text-align: center;
-  width: 60%;
+  width: 70%;
   z-index: 2;
 }
 
 .carousel-caption h2 {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
   border-right: .15em solid #fff;
-  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+  animation: typing 8s steps(50, end), blink-caret .75s step-end infinite;
   transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
+
+.carousel-caption-paragraph  {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 5.5rem;
+}
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
@@ -1216,6 +1226,38 @@ position: relative;
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+
+ .mission-card {
+
+  text-align: left;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 20px;
+  /* box-shadow: 5px 5px; */
+  padding: 20px 20px;
+  height: 50%;
+  transition: all ease-in-out 0.3s;
+
+}
+
+.mission-card  h3{
+font-size: 2.5rem;
+}
+
+ .vision-card{
+
+  text-align: left;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 20px;
+  /* box-shadow: 5px 5px; */
+  padding: 20px 20px;
+  height: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+.vision-card h3{
+  font-size: 2.5rem;
+  }
+  
 .features .features-image {
   position: relative;
   min-height: 400px;
@@ -1255,10 +1297,13 @@ position: relative;
 --------------------------------------------------------------*/
 .services .service-item {
   text-align: center;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 20px;
+  box-shadow: 4px 4px;
   padding: 80px 20px;
   height: 100%;
   transition: all ease-in-out 0.3s;
+
 }
 
 .services .service-item .icon {
