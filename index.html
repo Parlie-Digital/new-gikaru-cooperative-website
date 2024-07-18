@@ -31,11 +31,32 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* Adjustments for the footer */
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+      position: relative;
+      z-index: 1; /* Ensure footer is above the navbar */
+    }
+    .social-icons a {
+      color: #ffffff;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+    .social-icons a:hover {
+      color: #cccccc;
+      text-decoration: none;
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
 
 
+  
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -184,14 +205,10 @@
     <section id="features" class="features section">
 
       <div class="container">
-
-
-
-          
-        <div class="row d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
+        <div class="row justify-content-center align-items-center gap-5 flex-column flex-md-row">
           <div class="col-md-6 d-flex justify-content-center">
-            <div class="card p-3">
-              <h3 class="text-left custom-vision-text">Our Mission</h3>
+            <div class="card p-3 rounded shadow-lg border-2 border-dark border-opacity-25 mission-card">
+              <h3 class="custom-vision-text">Our Mission</h3>
               <p>
                 Our mission is to revolutionize coffee production by implementing advanced, efficient techniques that ensure the highest quality in every cup. We are dedicated to supporting our local farmers through sustainable practices and fair trade principles, fostering a cooperative environment where both the environment and our community can thrive.
               </p>
@@ -199,8 +216,8 @@
           </div>
     
           <div class="col-md-6 d-flex justify-content-center">
-            <div class="card p-3">
-              <h3 class="text-left custom-vision-text">Our Vision</h3>
+            <div class="card p-3 rounded shadow-lg border-2 border-dark border-opacity-25 vision-card">
+              <h3 class="custom-vision-text">Our Vision</h3>
               <p>
                 Our vision is to lead the coffee industry in innovation and sustainability, creating a future where our collective efforts yield exceptional coffee, bolster economic growth, and empower every member of our cooperative to achieve their fullest potential.
               </p>
@@ -223,7 +240,7 @@
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-4 gx-5 ">
 
           <div class="col-lg-4 col-md-6 rounded" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
@@ -267,7 +284,7 @@
               <div class="icon">
                 <img class="flex-shrink-0"" src="assets/img/icons/fairness.png" alt="fairness icon" width="50px" height="50px" />
               </div>
-              <span class="stretched-link">
+              <span class="stretched-link">!important
                 <h3 class="animate-character">Fairness</h3>
               </span>
               <p> We ensure fair trade practices, providing equitable opportunities and fair compensation for our farmers.</p>
@@ -311,113 +328,91 @@
     </section><!-- /CORE VALUES SECTION -->
 
         <!-- Key Initiatives Section --> 
-        <section id="initiatives" class="features section">
-
+        <section id="initiatives" class="features section py-5">
           <div class="container">
-    
-            <div class="row gy-4">
-        
+            <div class="row gy-4 gx-5">
               <div class="col-lg-6 order-1 order-lg-1 content">
-                <div class="l ps-2 ps-lg-3 pt-4 pt-lg-0">
-    
-        
+                <div class="ps-2 ps-lg-3 pt-4 pt-lg-0">
                   <div class="container section-title" data-aos="fade-up">
-                    <!-- <h3>Key Initiatives</h3> -->
                     <p>Our Key Initiatives</p>
                   </div>
-                  <ul class="d-flex flex-wrap justify-content-between">
-                    <li class="list-style-none d-flex align-items-center col-md-12">
-                      <div class="features-item d-flex justify-content-between mt-5 ps-0 ps-lg-3" data-aos="fade-right" data-aos-delay="500">
-                        <div class="col-md-2">
-                          <img class="img-fluid mx-auto d-block" src="assets/img/icons/gender-equality.png"   alt="Community" width="50px" height="50px">
-                        </div>
-                        <div class="col-md-10 px-3">  
-                          <h4>Gender Equality</h4>
-                          <ul class="list-unstyled">
-                            <li data-aos="fade-up">
-                              Eliminating gender disparities and giving women equal opportunities
-                            </li>
-                            <li data-aos="fade-up">Four out of six managerial positions held by women</li>
-                            <li data-aos="fade-up">Training programs to support women</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-style-none d-flex align-items-center">
-                      <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-right" data-aos-delay="500">
-                        <div class="col-md-2">
-                          <img class="img-fluid mx-auto d-block" src="assets/img/icons/ecology.png" alt="Community" width="50px" height="50px">
-                        </div>
-                        <div class="col-md-10 px-3"> 
-                          <h4>Quality & Sustainability</h4>
-                          <ul class="list-unstyled">
-                            <li data-aos="fade-up">
-                              Implementing quality production and sustainability projects
-                            </li>
-                            <li data-aos="fade-up">Certified Coffee Nursery</li>
-                            <li data-aos="fade-up">Training programs to support women</li>
-                            <li data-aos="fade-up">Maintaining Fair trade certification standards</li>
-                          </ul>
+                  <ul class="list-unstyled">
+                    <li class="mb-5 " data-aos="fade-up" data-aos-delay="100">
+                      <div class="card p-3 rounded shadow-md border-2 border-dark border-opacity-25 features-item initiatives-item">
+                        <div class="row g-0 align-items-center text-center text-md-start">
+                          <div class="col-md-2">
+                            <img class="img-fluid mx-auto d-block" src="assets/img/icons/gender-equality.png" alt="Gender Equality" width="50" height="50">
+                          </div>
+                          <div class="col-md-10 px-3">
+                            <h4>Gender Equality</h4>
+                            <ul class="list-unstyled">
+                              <li>Eliminating gender disparities and giving women equal opportunities</li>
+                              <li>Four out of six managerial positions held by women</li>
+                              <li>Training programs to support women</li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </li>
-           
-                  
-            
-
-                  <li class="list-style-none d-flex align-items-center">
-                    <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-right" data-aos-delay="500">
-                    <div class="col-md-2">
-                      <img class="img-fluid          
-mx-auto d-block" src="assets/img/icons/siblings.png" alt="Community" width="50px" height="50px">
-                    </div>
-                    <div class="col-md-10 px-3"> 
-                      <h4>Support for Women and Youth</h4>
-                      <ul class="list-unstyled">
-                        <li data-aos="fade-up">
-                          Training and support for women and youth 
-      
-                        </li>        
-                        <li data-aos="fade-up">  Certified Coffee Nursery               </li> 
-                        <li data-aos="fade-up">Training programs to support the Youth</li>
-                        <li data-aos="fade-up">Initial capital provided for youth     </li>   
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="list-style-none d-flex align-items-center">
-                  <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-right" data-aos-delay="500">
-                  <div class="col-md-2">
-                    <img class="img-fluid mx-auto d-block" src="assets/img/icons/solar-energy.png" alt="Community" width="50px" height="50px">
-                  </div>
-                  <div class="col-md-10 px-3"> 
-                    <h4>Diversification</h4>
-                    <ul class="list-unstyled">
-                      <li data-aos="fade-up">
-                        Renewable energy systems with coffee solar drier  
-    
-                      </li>
-                    </ul>
-                  </div>
+                    <li class="mb-5" data-aos="fade-up" data-aos-delay="200">
+                      <div class="card p-3 rounded shadow-md border-2 border-dark border-opacity-25 features-item initiatives-item">
+                        <div class="row g-0 align-items-center text-center text-md-start">
+                          <div class="col-md-2">
+                            <img class="img-fluid mx-auto d-block" src="assets/img/icons/ecology.png" alt="Quality & Sustainability" width="50" height="50">
+                          </div>
+                          <div class="col-md-10 px-3">
+                            <h4>Quality & Sustainability</h4>
+                            <ul class="list-unstyled">
+                              <li>Implementing quality production and sustainability projects</li>
+                              <li>Certified Coffee Nursery</li>
+                              <li>Training programs to support women</li>
+                              <li>Maintaining Fair trade certification standards</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mb-5" data-aos="fade-up" data-aos-delay="300">
+                      <div class="card p-3 rounded shadow-md border-2 border-dark border-opacity-25 features-item initiatives-item">
+                        <div class="row g-0 align-items-center text-center text-md-start">
+                          <div class="col-md-2">
+                            <img class="img-fluid mx-auto d-block" src="assets/img/icons/siblings.png" alt="Support for Women and Youth" width="50" height="50">
+                          </div>
+                          <div class="col-md-10 px-3">
+                            <h4>Support for Women and Youth</h4>
+                            <ul class="list-unstyled">
+                              <li>Training and support for women and youth</li>
+                              <li>Certified Coffee Nursery</li>
+                              <li>Training programs to support the Youth</li>
+                              <li>Initial capital provided for youth</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mb-5" data-aos="fade-up" data-aos-delay="400">
+                      <div class="card p-3 rounded shadow-md border-2 border-dark border-opacity-25 features-item initiatives-item">
+                        <div class="row g-0 align-items-center text-center text-md-start">
+                          <div class="col-md-2">
+                            <img class="img-fluid mx-auto d-block" src="assets/img/icons/solar-energy.png" alt="Diversification" width="50" height="50">
+                          </div>
+                          <div class="col-md-10 px-3">
+                            <h4>Diversification</h4>
+                            <ul class="list-unstyled">
+                              <li>Renewable energy systems with coffee solar drier</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-
-         
-        
-                </ul>
-    
               </div>
-    
-    
-    
+              <div class="features-image col-lg-6 order-2 order-lg-1" data-aos="fade-left" data-aos-delay="100">
+                <img src="assets/img/coffee/webp/havesting.webp" class="img-fluid" alt="Harvesting">
               </div>
-
-              <div class="features-image col-lg-6 order-2 order-lg-1" data-aos="fade-left" data-aos-delay="100"><img src="assets/img/coffee/webp/havesting.webp"  alt=""></div>
             </div>
-          
           </div>
-    
         </section><!-- /Vision and mission Section -->
 
 
@@ -432,7 +427,7 @@ mx-auto d-block" src="assets/img/icons/siblings.png" alt="Community" width="50px
       </div><!-- End Section Title -->
 
       <div class="container">
-
+        fade-up
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
@@ -458,7 +453,7 @@ mx-auto d-block" src="assets/img/icons/siblings.png" alt="Community" width="50px
             <!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-coffee">
-              <img src="assets/img/coffee/webp/coffee-tree.webp"  class="img-fluid" alt="coffee plant">
+              <img src="assets/img/coffee/webp/coffee-tree.webp"  clasfade-ups="img-fluid" alt="coffee plant">
               <div class="portfolio-info">
                 <h4>Coffee Plant</h4>
                  <a href="assets/img/coffee/webp/coffee-tree.webp"  title="Coffee Plant" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
