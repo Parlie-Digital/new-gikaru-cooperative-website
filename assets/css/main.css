@@ -45,7 +45,7 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--default-color);
+  /* background-color: var(--default-color); */
   font-family: var(--default-font);
 }
 
@@ -1489,6 +1489,136 @@ font-size: 2.5rem;
   }
 }
 
+
+/*--------------------------------------------------------------
+# Company Profile Section
+--------------------------------------------------------------*/
+:root {
+  --background-color: #ffffff;
+  --default-color: #5c3420;
+  --heading-color: #151515;
+  --accent-color: #f68b34;
+  --contrast-color: #312f2f;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--default-color);
+  line-height: 1.6;
+}
+
+.coffee-profile {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: var(--background-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border-left: 5px solid var(--accent-color);
+}
+
+.coffee-profile h1 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--heading-color);
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-in-out;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+}
+
+
+.profile-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.profile-details {
+  max-width: 600px; /* Ensures it doesn't stretch too wide on large screens */
+  width: 100%;
+}
+.profile-details h2 {
+  color: var(--accent-color);
+}
+
+.seasons-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.season {
+  flex: 1;
+  padding: 20px;
+  border-left: 3px solid var(--accent-color);
+  background-color: var(--contrast-color);
+  color: var(--background-color);
+  border-radius: 8px;
+}
+
+h3 {
+  color: var(--accent-color);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.recommendation h2 {
+  text-align: center;
+}
+
+.recommendation p {
+  font-style: italic;
+  font-size: 20px;
+  color: var(--default-color);
+  background-color: var(--accent-color);
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .coffee-profile {
+      padding: 20px;
+  }
+
+  .coffee-profile h1 {
+      font-size: 28px;
+  }
+
+  .coffee-profile h2 {
+      font-size: 24px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  .seasons-row {
+      flex-direction: column;
+  }
+
+  .season {
+      margin-bottom: 20px;
+  }
+}
+
+/* Animation for farmer count */
+@keyframes countUp {
+  from { content: "0"; }
+  to { content: "4600"; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 /*--------------------------------------------------------------
 # Initiatives Section
